@@ -192,7 +192,9 @@ a {
 
 .left-container {
   margin-top: 100px;
+  animation: fade 2s ease-in-out;
 }
+
 
 .developper {
   color: rgb(82, 157, 255);
