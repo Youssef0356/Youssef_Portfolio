@@ -139,6 +139,7 @@ body {
   0 0 15px rgb(255, 255, 255);
   padding: 5px;
   margin-top: 100px; 
+  width: 100%;
 }
 @keyframes wiggle {
   0%, 7% {
@@ -163,7 +164,12 @@ body {
     transform: rotateZ(0);
   }
 }
-.CV a{
+a{
+  list-style: none;
+  color:white;
+  text-decoration: none;
+}
+a .CV{
   cursor: none;
   list-style: none;
   text-decoration: none;
@@ -314,12 +320,13 @@ section{
     text-align: center;
   }
   .CV{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    width: 50%;
+    
   }
-
+  .intro {
+    display: grid;
+    place-self: center;
+  }
 
   video{
     width: fit-content;
