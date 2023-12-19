@@ -1,6 +1,6 @@
 
 html, body, section {
-  block-size: 130%;
+  block-size: 150%;
 }
 html {
   scroll-snap-type: y mandatory;
@@ -391,4 +391,45 @@ section{
   100%{
     opacity: 1;
   }
+}
+/* skills percentage here */
+.myskillsTEXT{
+  font-size: 5vh;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter !important;
+}
+.skills {
+  box-sizing: border-box;
+}
+.skills_container {
+  width: 100vh;
+  height: 5vh;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.skillsSECTION{
+  width: 100%;
+}
+
+
+.skillsGD {
+  width: 68%;
+  height: 100%;
+  background-color: #04AA6D;
+}
+.skills3D {
+  width: 59%; 
+  height: 100%;
+  background-color: #2196F3;
+}
+.skillsVE {
+  width: 75%; 
+  height: 100%;
+  background-color: #f44336;
+}
+.skillsIE {
+  width: 41%; 
+  height: 100%;
+  background-color: #808080;
 }
