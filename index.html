@@ -15,127 +15,146 @@
 </head>
 
 <body>
-  <video width="1920px" height="1080px" autoplay loop muted id="myVideo" >
+  <video width="1920px" height="1080px" autoplay loop muted id="myVideo">
     <source src="videos\space_-_5207 (Original).mp4" type="video/mp4">
   </video>
   <!-- NavBarMenu-->
-  <section >
-  <div class="navigationBar">
-    <div class="left-group">
-      <h1 class="PageName">Portfolio</h1>
-    </div>
+  <section class="container">
+    <section>
+      <div class="navigationBar">
+        <div class="left-group">
+          <h1 class="PageName">Portfolio</h1>
+        </div>
 
-    <div class="right-group">
-      <a href="#home" class="NavMenuButtons">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Home
-      </a>
-      <a href="#fade" class="NavMenuButtons">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Services</a>
-      <a href="#" class="NavMenuButtons">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Contact
-      </a>
-    </div>
-  </div>
-</section>
-<section class="hidden">
-  <!-- undernavbar navigation-->
-  <div class="Back-container">
-    <div class="left-container">
-      <h3 class="PreIntro-container" id="home">Welcome to my world.</h3>
-      <h3 class="intro-container">Hello I<i style="color: rgb(255, 255, 255)">'</i> m Youssef Neji</h3>
-      <span id="element"></span>
-
-      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-      <script>
-        var typed = new Typed('#element', {
-          strings: [' <i class="developper"> A Web Developper </i> ', '<i class="developper"> A Game Developper </i> ', '<i class="developper"> A 3D Animator </i> '],
-          typeSpeed: 40, loop: true, backSpeed: 50
-        });
-      </script>
-      <div class="intro">
-        <h5 class="letterOfPresentation">
-          I'm eager to be the kind of assistant you need.<br>Let's work together to make your business
-          flourish.
-        </h5>
-        <div class="CV">
+        <div class="right-group">
+           <a href="#" class="NavMenuButtons" onclick="home()">   <!--HOME BUTTON  -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Home
+          </a>
+          <a href="#fade" class="NavMenuButtons">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Services</a>
+          <a href="#" class="NavMenuButtons">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Contact
+          </a>
         </div>
       </div>
+    </section>
+    <section>
+      <!-- undernavbar navigation-->
+      <div class="full-container">
+        <div class="left-container">
+          <h3 class="PreIntro-container" id="home">Welcome to my world.</h3>
+          <h3 class="intro-container">Hello I<i style="color: rgb(255, 255, 255)">'</i> m Youssef Neji</h3>
+          <span id="element"></span>
+
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+          <script>
+            var typed = new Typed('#element', {
+              strings: [' <i class="developper"> A Web Developper </i> ', '<i class="developper"> A Game Developper </i> ', '<i class="developper"> A 3D Animator </i> '],
+              typeSpeed: 70, loop: true, backSpeed: 50
+            });
+          </script>
+          <div class="intro">
+            <h5 class="letterOfPresentation">
+              I'm eager to be the kind of assistant you need.<br>Let's work together to make your business
+              flourish.
+            </h5>
+            <div class="CV">
+            </div>
+          </div>
 
 
 
 
-    </div>
-    <div class="right-container">
-      <div class="Image-Background">
-        <img src="Pictures/YoussefAvatarv1.png" class="Mypicture">
-      </div>
-    </div>
-  </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</section>
-<hr width="50%" class="UNDERLINE">
-<section class="hidden">
-<br>
-<br>
-<br>
-<br>
-  <div class="MyServices" style="width: 100%;">
-    <div> 
-        <h1 class="services" id="fade"> 
-          What I Offer ?
-        </h1>
-        <div class="services_container">
-          
-          <div class="Game_Making">
-            <img src="Pictures\GameDevelopment.jpg" width="150px" height="200px" style="border-style:solid;">
-            <h3 class="ServicesText"> Game Making</h3>
-          </div>
-          <div class="3D_Modeling"> 
-            <img src="Pictures\3dModeling.jpg" width="150px" height="200px" style="border-style:solid;">
-            <h3 class="ServicesText"> 3D Modeling</h3>
-          </div>
-          <div class="3D_Animation">
-            <img src="Pictures\3danimation.jpg" width="150px" height="200px" style="border-style:solid;">
-            <h3 class="ServicesText">3D Animation</h3>
-          </div>
-          <div class="Video_editing">
-            <img src="Pictures\videoediting.jpg" width="150px" height="200px" style="border-style:solid;">
-            <h3 class="ServicesText">Video Editing</h3>
-          </div>
-          <div class="Image_Editing" >
-            <img src="Pictures\photoediting.jpg" width="150px" height="200px" style="border-style:solid;">
-            <h3 class="ServicesText">Image Editing</h3>
+        </div>
+        <div class="right-container">
+          <div class="Image-Background">
+            <img src="Pictures/YoussefAvatarv1.png" class="Mypicture">
           </div>
         </div>
-        <hr>
-    </div>
-  </div>
-</section>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </section>
+    <hr width="50%" class="UNDERLINE">
+    <section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="MyServices" style="width: 100%;">
+        <div>
+          <h1 class="services" id="fade">
+            What I Offer ?
+          </h1>
+          <div class="services_container">
+
+            <div class="Game_Making">
+              <img src="Pictures\GameDevelopment.jpg" width="150px" height="200px" style="border-style:solid;">
+              <h3 class="ServicesText"> Game Making</h3>
+            </div>
+            <div class="Modeling">
+              <img src="Pictures\3dModeling.jpg" width="150px" height="200px" style="border-style:solid;">
+              <h3 class="ServicesText"> 3D Modeling</h3>
+            </div>
+            <div class="Animation">
+              <img src="Pictures\3danimation.jpg" width="150px" height="200px" style="border-style:solid;">
+              <h3 class="ServicesText">3D Animation</h3>
+            </div>
+            <div class="Video_editing">
+              <img src="Pictures\videoediting.jpg" width="150px" height="200px" style="border-style:solid;">
+              <h3 class="ServicesText">Video Editing</h3>
+            </div>
+            <div class="Image_Editing">
+              <img src="Pictures\photoediting.jpg" width="150px" height="200px" style="border-style:solid;">
+              <h3 class="ServicesText">Image Editing</h3>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <hr>
+
+        </div>
+      </div>
+    </section>
+  </section>
 </body>
 
 </html>
