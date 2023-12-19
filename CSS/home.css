@@ -171,8 +171,6 @@ a{
 }
 a .CV{
   cursor: none;
-  list-style: none;
-  text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 2.5vh;
