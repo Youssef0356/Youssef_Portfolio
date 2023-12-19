@@ -299,12 +299,18 @@ section{
 
 
 @media (max-width: 600px) {
+  body{
+    overflow-x: none;
+  }
   .navigationBar {
     flex-direction: column;
     align-items: center;
-    height: 15vh;
+    height: 14vh;
+    width:100% ;
   }
-
+  .skillsSECTION{
+    width: 50% ;
+  }
   .PageName {
     font-size: 20px;
   }
@@ -312,13 +318,18 @@ section{
     margin-top: 0;
   }
   .full-container{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     top: 20vh;
     text-align: center;
   }
+  .CV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+
   video{
     width: fit-content;
   }
@@ -402,10 +413,12 @@ section{
   box-sizing: border-box;
 }
 .skills_container {
-  width: 100vh;
+  width: 100%;
   height: 5vh;
   background-color: #ddd;
   border-radius: 5px;
+  text-align: right;
+  color: white;
 }
 
 .skillsSECTION{
