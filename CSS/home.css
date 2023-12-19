@@ -13,6 +13,7 @@ body {
   background-color: rgb(0, 0, 35);
   scroll-behavior: smooth;
   cursor: none;
+  position: relative;
 }
 
 #custom-cursor {
@@ -262,8 +263,9 @@ section{
   }
 
   .Mypicture {
-    width: 300px;
-    height: 420px;
+    width: 50%;
+    height: 100%;
+    padding: 30px;
   }
  
   .developper {
@@ -347,15 +349,22 @@ section{
   }
 
   .Mypicture {
-    width: 70%;
-    height: 100%;
-    padding: auto;
+    width: 50%;
+    height: 100%;    
+    padding: 40px;
   }
+.right-container{
+  width: 100%;
+}
 
   .developper {
     font-size: 10px;
   }
-
+  .letterOfPresentation{
+    text-align: center;
+    font-size: 1.25vh;
+    padding: 10px;
+  }
   .services_container {
     column-gap: 5%;
     display: flex;
@@ -370,6 +379,9 @@ section{
   .Video_editing,
   .Image_Editing {
     padding: 20px;
+  }
+  .services{
+  font-size: 5vh;    
   }
 }
 
