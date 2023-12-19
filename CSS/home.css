@@ -1,5 +1,18 @@
 
-
+html, body, section {
+  block-size: 130%;
+}
+html {
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 body {
   color: white;
@@ -126,6 +139,7 @@ body {
 }
 /* cv download button */
 .CV{
+  animation: wiggle 2s linear infinite;
   text-align: center;
   background-color: rgb(0, 25, 79);
   border-radius: 7px;
@@ -134,6 +148,29 @@ body {
   0 0 15px rgb(255, 255, 255);
   padding: 5px;
   margin-top: 100px; 
+}
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
 }
 .CV a{
   cursor: none;
