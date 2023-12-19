@@ -1,3 +1,6 @@
+
+
+
 body {
   color: white;
   font-family: "Rubik";
@@ -5,7 +8,19 @@ body {
   padding: 0;
   background-color: rgb(0, 0, 35);
   scroll-behavior: smooth;
+  cursor: none;
 }
+
+#custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform-origin: center;
+}
+
 
 #myVideo {
   position: fixed;
@@ -66,7 +81,9 @@ body {
   height: 650px;
   transition: .5s;
 }
-
+#navigationBar{
+  cursor: none;
+}
 .intro {
   margin-top: 50px;
 }
@@ -105,8 +122,38 @@ body {
   font-size: 20px;
   display: inline-block;
   padding: 15px;
+  cursor: none;
 }
-
+.CV{
+  text-align: center;
+  background-color: rgb(0, 25, 79);
+  border-radius: 7px;
+  box-shadow: 
+  0 0 5px rgb(13, 0, 255),
+  0 0 15px rgb(255, 255, 255);
+  padding: 5px;
+  margin-top: 100px;
+}
+.CV a{
+  cursor: none;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5vh;
+  
+  
+}
+.CV:hover{
+  background-color: rgb(0, 25, 79);
+  transition: all .7s ;
+  border-radius: 7px;
+  box-shadow: 
+    0 0 5px rgb(82, 151, 255),
+    0 0 15px rgb(82, 151, 255),
+    0 0 30px rgb(102, 82, 255);
+  padding:10px;
+}
 .NavMenuButtons:hover {
   background-color: rgb(82, 137, 255);
   transition: all .7s ;
