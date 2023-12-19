@@ -15,22 +15,6 @@ body {
   min-height: 100%;
   z-index: -1; 
 }
-
-.navigationBar {
-  margin-top: 80px;
-  opacity: 0.8;
-}
-
-#instructions {
-  color: #22313F;
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  font-weight: 200;
-  position: fixed;
-  top: 1em;
-  left: 1em;
-  letter-spacing: 1px;
-}
-
 *::-webkit-scrollbar {
   display: none;
   overflow-y: scroll;
@@ -75,6 +59,7 @@ h3 {
   margin-right: 50px;
   width: 500px;
   height: 500px;
+  animation: fade 2s ease-in-out;
 }
 
 .Mypicture {
@@ -122,6 +107,8 @@ h3 {
   background: linear-gradient(90deg, rgba(0,0,27,1) 0%, rgba(0,0,53,1) 100%);
   font-family: 'Rubik', sans-serif;
   color: white;
+  margin-top: 80px;
+  opacity: 0.8;
 }
 
 .PageName {
@@ -151,144 +138,6 @@ a {
     0 0 15px rgb(82, 151, 255),
     0 0 30px rgb(102, 82, 255);
 }
-
-/* Media Queries */
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 100%;
-  }
-
-  .col {
-    flex: 0 0 100%;
-    padding: 0;
-  }
-
-  .PreIntro-container {
-    font-size: 20px;
-  }
-
-  .intro-container {
-    font-size: 25px;
-  }
-
-  #element {
-    font-size: 20px;
-  }
-
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .col {
-    flex: 0 0 50%;
-  }
-}
-
-@media (min-width: 993px) {
-  .col {
-    flex: 0 0 33.33%;
-  }
-}
-
-.left-container {
-  margin-top: 100px;
-  animation: fade 2s ease-in-out;
-}
-
-
-.developper {
-  color: rgb(82, 157, 255);
-}
-
-@media (max-width: 750px) {
-  .Back-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .PreIntro-container {
-    font-size: 20px;
-  }
-
-  .intro-container {
-    font-size: 25px;
-  }
-
-  #element {
-    font-size: 20px;
-  }
-
-  .right-container {
-    width: 200px;
-    height: 200px;
-    margin-top: -70px;
-    margin-left: -70px;
-    flex-direction: column;
-  }
-
-  .UNDERLINE {
-    margin-top: 200px;
-  }
-
-  .Mypicture {
-    width: 300px;
-    height: 400px;
-  }
-}
-
-@media (min-width: 200px) and (max-width: 350px) {
-  .PreIntro-container {
-    font-size: 13px;
-  }
-
-  .intro-container {
-    font-size: 20px;
-  }
-
-  #element {
-    font-size: 15px;
-  }
-
-  .letterOfPresentation {
-    font-size: 10px;
-  }
-}
-/* navigation bar  */
-@media (min-width:523px)and(max-width:800px){
-  .navigationBar {
-    height: 60px;
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-}
-@media ((min-width:200px) and (max-width:523px)){
-  .PageName{
-    margin: 0;
-  }
-  .navigationBar {
-    margin-top: 50px;
-    height: 60px;
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .NavMenuButtons{
-    font-size: 15px;
-    padding: 5px;
-  }
-  .intro-buttons{
-    display: flex;
-    flex-direction: column;
-    font-size: 10px;
-  }
-  .work{
-    background: linear-gradient(180, rgba(0,0,27,1) 0%, rgba(0,0,53,1) 100%);
-  }
-}
 .Second-container{
   display: flex;
   align-items: center;
@@ -306,10 +155,26 @@ a {
 }
 .services{
   text-align: center;
-  animation: fade 1s ease-in-out ;
+  animation: fade 1s ease-in-out ; 
+  font-size: 50px;
+  font-weight: lighter !important;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 section{
   display: grid;
   place-items: center;
   align-content: center;
+}
+/* what i offer ? */
+
+.services_container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  column-gap: 10%;
+
+}
+.ServicesText{
+  text-align: center;
+  margin: 0;
 }
