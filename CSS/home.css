@@ -340,7 +340,7 @@ section{
 
 @media (max-width: 600px) {
   body{
-    overflow-x: none;
+    cursor: none;
   }
   .navigationBar {
     flex-direction: column;
@@ -351,12 +351,17 @@ section{
   .Left-group{
     font-size: 0px;
     flex-direction: column;
-    padding-bottom: 50px;
+    
   }
   .Left-group:hover{
     transition:font-size 0.1s ease-in-out;
     font-size: 15px;
     padding: 1px;
+    height: 25%;
+    transition:height 1 ease-in-out;
+  }
+  #custom-cursor{
+    display: hidden;
   }
   .skillsSECTION{
     width: 50% ;
