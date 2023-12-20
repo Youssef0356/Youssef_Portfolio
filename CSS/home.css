@@ -109,7 +109,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:rgba(0, 89, 255, 0.5);
+  background-color:rgba(0, 69, 197, 0.5);
   border-radius: 25px 25px 0px 0px;  
 }
 .Left-group:hover{
@@ -117,16 +117,16 @@ body {
   transition: height .5s ease-in-out ;
 }
 .LinkVideos{
-  padding: 15px;
+padding: 10px;
 }
 .Link3D{
-  padding: 15px;
+  padding: 10px;
 }
 .LinkGames{
-  padding: 15px;
+  padding: 10px;
 }
 .LinkPictures{
-  padding: 15px;
+  padding: 10px;
 }
 
 
@@ -351,11 +351,12 @@ section{
   .Left-group{
     font-size: 0px;
     flex-direction: column;
+    padding-bottom: 50px;
   }
   .Left-group:hover{
     transition:font-size 0.1s ease-in-out;
     font-size: 15px;
-    padding: 15px;
+    padding: 1px;
   }
   .skillsSECTION{
     width: 50% ;
