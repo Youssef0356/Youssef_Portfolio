@@ -98,6 +98,42 @@ body {
   font-size: 15px;
   color: gray;
 }
+
+/* bottom navigation bar  */
+.Left-group{
+  bottom: 0;
+  position: fixed;
+  width: 50%;
+  height: 3%;
+  transition: height 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(0, 89, 255, 0.5);
+  border-radius: 25px 25px 0px 0px;  
+}
+.Left-group:hover{
+  height: 7%;
+  transition: height .5s ease-in-out ;
+}
+.LinkVideos{
+  padding: 15px;
+}
+.Link3D{
+  padding: 15px;
+}
+.LinkGames{
+  padding: 15px;
+}
+.LinkPictures{
+  padding: 15px;
+}
+
+
+
+.Left-group a{
+  color: white;
+}
 .navigationBar {
   z-index: 1000;
   display: flex;
@@ -144,6 +180,9 @@ body {
   margin-top: 100px; 
   width: 100%;
 }
+.wiggling a{
+  color: white;
+}
 @keyframes wiggle {
   0%, 7% {
     transform: rotateZ(0);
@@ -169,7 +208,6 @@ body {
 }
 a{
   list-style: none;
-  color:white;
   text-decoration: none;
 }
 a .CV{
@@ -310,6 +348,15 @@ section{
     height: 14vh;
     width: 100%;
   }
+  .Left-group{
+    font-size: 0px;
+    flex-direction: column;
+  }
+  .Left-group:hover{
+    transition:font-size 0.1s ease-in-out;
+    font-size: 15px;
+    padding: 15px;
+  }
   .skillsSECTION{
     width: 50% ;
   }
@@ -395,6 +442,9 @@ section{
 .MyServices{
   height: 110%;
 }
+.MyServices a{
+  color: white;
+}
 .services_container{
   display: flex;
   justify-content: center;
@@ -448,14 +498,14 @@ section{
 
 
 .skillsGD {
-  width: 68%;
+  width: 79%;
   height: 100%;
   background-color: #2196F3;
   border-radius: 25px;
 
 }
 .skills3D {
-  width: 59%; 
+  width: 65%; 
   height: 100%;
   background-color: #2196F3;
   border-radius: 25px;
@@ -480,4 +530,33 @@ section{
   height: 100%;
   background-color: #2196F3;
   border-radius: 25px;
+}
+
+
+
+section .portfolio{
+  width: 100%;
+  height: 100%;
+
+}
+.left-group{
+  padding: 0;
+  margin-top: 0;
+}
+.portfolio_container{
+
+  text-align: center;
+  height:100%;
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+    
+}
+.videos{
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
