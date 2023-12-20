@@ -119,14 +119,39 @@ body {
 .LinkVideos{
 padding: 10px;
 }
+.LinkVideos:hover{
+  padding-bottom: 20px;
+  border-radius: 2px;
+}
+.LinkVideos a:focus{
+  text-decoration:overline;
+}
 .Link3D{
   padding: 10px;
+}
+.Link3D:hover{
+  padding-bottom: 20px;
+}
+.Link3D a:focus{
+  text-decoration:overline;
 }
 .LinkGames{
   padding: 10px;
 }
+.LinkGames:hover{
+  padding-bottom: 20px;
+}
+.LinkGames a:focus{
+  text-decoration:overline;
+}
 .LinkPictures{
   padding: 10px;
+}
+.LinkPictures:hover{
+  padding-bottom: 20px;
+}
+.LinkPictures a:focus{
+text-decoration: overline;
 }
 
 
