@@ -467,6 +467,7 @@ section{
   .services{
   font-size: 5vh;    
   }
+
 }
 
 /* what i offer ? */
@@ -590,4 +591,8 @@ section .portfolio{
   width: 100%;
   padding: 0;
   margin: 0;
+}
+.videos iframe{
+  width: 25%;
+  aspect-ratio: 2/2 ;
 }
