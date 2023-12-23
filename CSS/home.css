@@ -14,6 +14,8 @@ body {
   scroll-behavior: smooth;
   cursor: none;
   position: relative;
+  overflow-x: hidden;
+  
 }
 
 #custom-cursor {
@@ -68,7 +70,6 @@ body {
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
-  position: sticky;
 }
 
 .right-container {
@@ -101,9 +102,10 @@ body {
 
 /* bottom navigation bar  */
 .Left-group{
+  z-index: 1000;
   bottom: 0;
   position: fixed;
-  width: 50%;
+  width: fit-content;
   height: 3%;
   transition: height 1s;
   display: flex;
@@ -360,6 +362,12 @@ section{
   .right-container{
     height: fit-content;
   }
+  .videos .cols{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 25px ;
+  }
 }
 
 
@@ -399,6 +407,7 @@ section{
   }
   .full-container{
     flex-direction: column;
+    align-items: center;
     top: 20vh;
     text-align: center;
   }
@@ -451,12 +460,10 @@ section{
   }
   .services_container {
     column-gap: 5%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .Modeling,
   .Game_Making,
   .Animation,
@@ -465,10 +472,15 @@ section{
     padding: 20px;
   }
   .services{
-  font-size: 5vh;    
+  font-size: 5vh;
   }
-
-
+  .videos .cols{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 30px ;
+    animation: show 5s ease-in-out;
+    }
 }
 
 /* what i offer ? */
@@ -483,14 +495,11 @@ section{
   justify-content: center;
   align-content: center;
   column-gap: 10%;
-
 }
 .ServicesText{
   text-align: center;
   margin: 0;
 }
-
-
 .fadein {
   animation: show 1s ease-in-out;
 }
@@ -501,9 +510,8 @@ section{
   100%{
     opacity: 1;
   }
+  
 }
-
-
 
 
 /* skills percentage here */
@@ -524,12 +532,9 @@ section{
   text-align: right;
   color: white;
 }
-
 .skillsSECTION{
   width: 100%;
 }
-
-
 .skillsGD {
   width: 79%;
   height: 100%;
@@ -565,35 +570,19 @@ section{
   border-radius: 25px;
 }
 
-
-
-section .portfolio{
-  width: 100%;
-  height: 100%;
-  
-}
 .left-group{
   padding: 0;
   margin-top: 0;
 }
-.portfolio_container{
-
-  text-align: center;
-  height:100%;
-  display: flex;
-  align-items: center;
-  grid-gap: 20px;
-  justify-content: center;
-  width: 100%;
-  padding: 0;
-    
+.cols{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
 }
-.videos{
-  width: 100%;
-  padding: 0;
-  margin: 0;
+.cols a{
+  cursor: none;
+  border:solid 2px white
 }
-.videos iframe{
-  width: 25%;
-  aspect-ratio: 2/2 ;
+.cols a:hover{
+  border:solid 2px red ;
 }
