@@ -15,6 +15,7 @@ body {
   cursor: none;
   position: relative;
   overflow-x: hidden;
+  box-sizing: border-box;
   
 }
 
@@ -48,7 +49,7 @@ body {
 
 .PreIntro-container {
   font-size: 25px;
-  color: gray;
+  color: rgb(121, 111, 255);
   font-weight: lighter;
   transition: .5s;
   margin-bottom: 6px;
@@ -96,9 +97,11 @@ body {
 
 
 .letterOfPresentation {
-  font-size: 15px;
-  color: gray;
+  font-size: 16px;
+  color: rgb(121, 111, 255);
+  font-weight: lighter;
 }
+
 
 /* bottom navigation bar  */
 .Left-group{
@@ -368,6 +371,9 @@ section{
   place-items: center;
   gap: 25px ;
   }
+  pre{
+    display: none;
+  }
 }
 
 
@@ -481,24 +487,39 @@ section{
     gap: 30px ;
     animation: show 5s ease-in-out;
     }
+    pre{
+      display: none;
+    }
+    a img{
+      width: 200px;
+      height: 250px;
+    }
 }
 
 /* what i offer ? */
 .MyServices{
   height: 110%;
+  width: 100%;
 }
 .MyServices a{
   color: white;
 }
 .services_container{
-  display: flex;
+  display: grid;
   justify-content: center;
   align-content: center;
+  grid-template-columns: auto auto;
+
   column-gap: 10%;
 }
 .ServicesText{
   text-align: center;
   margin: 0;
+  padding-bottom: 30px;
+  padding-top:10px;
+}
+.MyServices pre{
+  padding: 20px;
 }
 .fadein {
   animation: show 1s ease-in-out;
@@ -523,6 +544,8 @@ section{
 }
 .skills {
   box-sizing: border-box;
+
+
 }
 .skills_container {
   width: 100%;
