@@ -74,10 +74,8 @@ body {
 }
 
 .right-container {
-  margin-top: -70px;
-  margin-right: 50px;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   animation: fade 2s ease-in-out;
 }
 
@@ -294,7 +292,7 @@ section{
   place-items: center;
   align-content: center;
 }
-@media (min-width: 601px) and (max-width: 1024px){
+@media (min-width: 601px) and (max-width: 1366px){
   .navigationBar {
     flex-direction: column;
     align-items: center;
@@ -373,6 +371,14 @@ section{
   }
   pre{
     display: none;
+  }
+  .cols a{
+    width: 50%;
+    height: 50%;
+  }
+  .cols img{
+    width: 100%;
+    height: 50%;
   }
 }
 
@@ -460,12 +466,13 @@ section{
     padding: 10px;
   }
   .services_container {
+    display: grid;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: fit-content;
   }
 .services_container img{
-  width: 200px;
+  width: 100%;
   height: 250px;
 }
   .services{
@@ -481,9 +488,13 @@ section{
     pre{
       display: none;
     }
-    a img{
-      width: 200px;
-      height: 250px;
+    .cols a{
+      width: 50%;
+      height: 50%;
+    }
+    .cols img{
+      width: 100%;
+      height: 50%;
     }
 }
 
@@ -517,7 +528,11 @@ section{
   }
   
 }
-
+.services_container{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5;
+}
 
 /* skills percentage here */
 .myskillsTEXT{
