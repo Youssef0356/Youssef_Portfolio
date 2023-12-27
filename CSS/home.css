@@ -461,7 +461,7 @@ section{
   }
   .services_container {
     justify-content: center;
-    place-items: center;
+    align-items: center;
   }
   .Modeling,
   .Game_Making,
