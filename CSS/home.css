@@ -462,14 +462,12 @@ section{
   .services_container {
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
-  .Modeling,
-  .Game_Making,
-  .Animation,
-  .Video_editing,
-  .Image_Editing {
-    padding: 20px;
-  }
+.services_container img{
+  width: 200px;
+  height: 250px;
+}
   .services{
   font-size: 5vh;
   }
@@ -497,14 +495,7 @@ section{
 .MyServices a{
   color: white;
 }
-.services_container{
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  grid-template-columns: auto auto;
 
-  column-gap: 10%;
-}
 .ServicesText{
   text-align: center;
   margin: 0;
