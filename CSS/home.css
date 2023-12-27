@@ -390,7 +390,6 @@ section{
   .Left-group{
     font-size: 0px;
     flex-direction: column;
-    
   }
   .Left-group:hover{
     transition:font-size 0.1s ease-in-out;
@@ -405,6 +404,7 @@ section{
   .skillsSECTION{
     width: 50% ;
   }
+
   .PageName {
     font-size: 20px;
   }
@@ -447,15 +447,10 @@ section{
   }
 
   .Mypicture {
-    width: 50%;
-    height: 80%;    
-    padding: 40px;
+    width: 70%;
+    height: 100%;    
+    padding: 30px;
   }
-.right-container{
-  width: 100%;
-  height: fit-content;
-}
-
   .developper {
     font-size: 10px;
   }
@@ -465,10 +460,8 @@ section{
     padding: 10px;
   }
   .services_container {
-    column-gap: 5%;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    place-items: center;
   }
   .Modeling,
   .Game_Making,
@@ -608,4 +601,7 @@ section{
 }
 .cols a:hover{
   border:solid 2px red ;
+}
+.hideText{
+  font-size: 12px;
 }
