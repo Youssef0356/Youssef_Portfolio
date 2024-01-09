@@ -18,24 +18,25 @@ body {
   box-sizing: border-box;
   
 }
-.fadein{
-  background-color: rgb(255, 255, 255);
-}
-.section2{
-  background-color: black;
-}
-.section3{
-  background-color: white;
-}
+
 #custom-cursor {
   position: fixed;
   width: 20px;
   height: 20px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid white;
   border-radius: 50%;
   pointer-events: none;
   transform-origin: center;
-  z-index: 10000;
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; 
 }
 *::-webkit-scrollbar {
   display: none;
@@ -43,25 +44,27 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+
+
 .PreIntro-container {
   font-size: 25px;
-  color: rgb(0, 0, 0);
+  color: rgb(121, 111, 255);
   font-weight: lighter;
   transition: .5s;
   margin-bottom: 6px;
 }
+
 .intro-container {
   font-size: 50px;
   font-weight: lighter;
   transition: .5s;
   margin-top: 0;
-  color: black;
 }
 
 #element {
   font-size: 50px;
   transition: .5s;
-  color: black;
 }
 
 .full-container {
@@ -94,7 +97,7 @@ body {
 
 .letterOfPresentation {
   font-size: 16px;
-  color: rgb(0, 0, 0);
+  color: rgb(121, 111, 255);
   font-weight: lighter;
 }
 
@@ -158,7 +161,7 @@ text-decoration: overline;
 
 
 .Left-group a{
-  color: rgb(0, 0, 0);
+  color: white;
 }
 .navigationBar {
   z-index: 1000;
@@ -168,10 +171,10 @@ text-decoration: overline;
   height: 90px;
   width: 100%;
   position: fixed;
-  background: linear-gradient(90deg, rgba(0,0,27,1) 0%, rgb(20, 20, 20) 100%);
-  opacity: 0.8;
+  background: linear-gradient(90deg, rgba(0,0,27,1) 0%, rgba(0,0,53,1) 100%);
   font-family: 'Rubik', sans-serif;
   color: white;
+  opacity: 0.8;
   margin: 0;
   top: 0;
 }
@@ -202,7 +205,7 @@ text-decoration: overline;
   border-radius: 7px;
   box-shadow: 
   0 0 5px rgb(13, 0, 255),
-  0 0 15px rgb(0, 0, 0);
+  0 0 15px rgb(255, 255, 255);
   padding: 5px;
   margin-top: 100px; 
   width: 100%;
