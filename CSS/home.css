@@ -16,6 +16,10 @@ body {
   position: relative;
   overflow-x: hidden;
   box-sizing: border-box;
+  animation : gradient 15s ease infinite ;
+  background: linear-gradient(315deg, rgb(37, 0, 101) 3%, rgba(60,132,206,1) 38%, rgb(26, 0, 81) 68%, rgb(5, 0, 24) 98%);
+  background-size: 400% 400%;
+  background-attachment: fixed;
   
 }
 
@@ -157,7 +161,18 @@ padding: 10px;
 text-decoration: overline;
 }
 
-
+/* background effect */
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
 
 .Left-group a{
   color: white;
