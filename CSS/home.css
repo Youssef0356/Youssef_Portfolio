@@ -1,7 +1,7 @@
 
 section {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto;
   justify-content: center;
 }
 
@@ -57,6 +57,7 @@ body {
   font-weight: lighter;
   transition: .5s;
   margin-bottom: 6px;
+  animation: colorchange 15s ease-in-out infinite;
 }
 
 .intro-container {
@@ -103,6 +104,18 @@ body {
   font-size: 16px;
   color: rgb(121, 111, 255);
   font-weight: lighter;
+  animation: colorchange 15s ease-in-out infinite;
+}
+@keyframes colorchange{
+  0% {
+    color: rgb(121, 111, 255);
+  }
+  25%{
+    color: black;
+  }
+  100%{
+    color: rgb(121, 111, 255);
+  }
 }
 
 /* bottom navigation bar  */
@@ -303,11 +316,7 @@ a .CV{
   font-weight: lighter !important;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-section{
-  display: grid;
-  place-items: center;
-  align-content: center;
-}
+
 @media (min-width: 601px) and (max-width: 1400px){
   .navigationBar {
     align-items: center;
@@ -380,13 +389,6 @@ section{
   .right-container{
     height: fit-content;
   }
-  .videos .cols{
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  gap: 25px ;
-  }
-
   .cols a{
     width: 50%;
     height: 50%;
@@ -424,6 +426,8 @@ section{
   }
   .skillsSECTION{
     width: 50% ;
+    display: grid;
+    grid-template-columns: auto;
   }
 
   .PageName {
@@ -487,13 +491,6 @@ section{
   .services{
   font-size: 5vh;
   }
-  .videos .cols{
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    gap: 30px ;
-    animation: show 5s ease-in-out;
-    }
     .cols a{
       width: 50%;
       height: 50%;
@@ -548,11 +545,7 @@ section{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: lighter !important;
   font-size: 50px;
-}
-.skills {
-  box-sizing: border-box;
-
-
+  text-align: center;
 }
 .skills_container {
   width: 100%;
@@ -604,14 +597,22 @@ section{
   padding: 0;
   margin-top: 0;
 }
-.cols{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 20px;
+.projectsTEXT{
+  text-align: center;
 }
-.cols a{
+.Video-Container div a img {
+  border: solid 2px white;
   cursor: none;
-  border:solid 2px white
+  width: 100%;
+  aspect-ratio: 1;
+}
+.Video-Container  {
+  display: grid;
+  gap: 5%; 
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  justify-content: center;
+  place-self: center;
+  padding: 5%;
 }
 .cols a:hover{
   border:solid 2px red ;
@@ -633,6 +634,16 @@ section{
   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
   justify-items: center;
 }
+.Video-Container h4{
+  text-align: center;
+  text-decoration:underline;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(121, 111, 255);
+  animation: colorchange 20s ease-in-out infinite;
+}
+
+
+
 .Game_Making{
   width: 50%;
 }
