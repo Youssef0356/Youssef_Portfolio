@@ -290,7 +290,7 @@ a{
   list-style: none;
   text-decoration: none;
 }
-a .CV{
+.CV a {
   cursor: none;
   color: white;
   font-weight: bold;
