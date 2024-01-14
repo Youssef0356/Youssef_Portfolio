@@ -78,6 +78,4 @@ function ModelingDesc() {
   document.getElementById("ModelingDescField").innerHTML="";
   document.getElementById("ModelingButton").innerHTML="show more";
   state="less";
-}
-
-}
+}}
