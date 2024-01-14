@@ -67,15 +67,22 @@ body {
 }
 
 #element {
-  font-size: 50px;
   transition: .5s;
-}
+  font-size: 2vh; 
+  color: rgb(166, 166, 166);
 
+
+}
+.OffreDescription{
+  color: rgba(166, 166, 166, 0.573);
+  font-size: smaller;
+  font-weight: lighter;
+  text-align: center;
+  padding: 0;
+  
+}
 .full-container {
-  margin-top: 100px;
   display: grid;
-  justify-content: space-around;
-  place-items: center;
   padding: 5%;
   grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
 }
@@ -84,15 +91,26 @@ body {
   width: 100%;
   animation: fade 2s ease-in-out;
 }
-
+.left-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .Mypicture {
-  margin-top: 30px;
-  margin-left: 7px;
   width: 100%;
-  
+  aspect-ratio: 1;
   object-fit: cover;
-
   transition: .5s;
+}
+.left-group h3{
+  font-size: 5vh;
+  text-align: center;
+}
+.left-group .introduction{
+  font-size: 2vh;
+  color: rgb(166, 166, 166);
+  font-weight: lighter;
 }
 #navigationBar{
   cursor: none;
@@ -211,7 +229,7 @@ text-decoration: overline;
 .PageName {
   font-size: 40px;
   color: white;
-  padding: 0 10%  ;
+  padding: 0 0 0 10%  ;
 }
 
 .NavMenuButtons {
@@ -226,6 +244,7 @@ text-decoration: overline;
 }
 /* cv download button */
 .wiggling{
+  padding: 50px;
   animation: wiggle 2s linear infinite;
 }
 .CV{
@@ -236,11 +255,13 @@ text-decoration: overline;
   0 0 5px rgb(13, 0, 255),
   0 0 15px rgb(255, 255, 255);
   padding: 5px;
-  margin-top: 100px; 
-  width: 100%;
+  
+
 }
 .wiggling a{
   color: white;
+  cursor: none;
+  z-index: -1;
 }
 @keyframes wiggle {
   0%, 7% {
@@ -324,17 +345,9 @@ a .CV{
     align-items: center;
     height: 10%;
   }
-  .left-group, .right-group{
-    margin-top: 0;
-    
-  }
-  .full-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 20vh;
-    text-align: center;
+  .full-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
   }
 
   .PageName{
@@ -357,9 +370,8 @@ a .CV{
   }
 
   .Mypicture {
-    width: 50%;
-    height: 100%;
-    padding: 30px;
+    width: 100%;
+    aspect-ratio:1/1 ;
   }
  
   .developper {
@@ -388,9 +400,6 @@ a .CV{
   .Image_Editing{
     padding: 5%;
   }
-  .right-container{
-    height: fit-content;
-  }
   .cols a{
     width: 50%;
     height: 50%;
@@ -407,21 +416,17 @@ a .CV{
     cursor: none;
   }
   .navigationBar {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 14vh;
     width: 100%;
   }
-  .Left-group{
-    font-size: 0px;
-    flex-direction: column;
-  }
-  .Left-group:hover{
-    transition:font-size 0.1s ease-in-out;
-    font-size: 15px;
-    padding: 1px;
-    height: 25%;
-    transition:height 1 ease-in-out;
+  .full-container{
+    margin-top: 10vh;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+
   }
   #custom-cursor{
     display: hidden;
@@ -431,52 +436,19 @@ a .CV{
     display: grid;
     grid-template-columns: auto;
   }
-
   .PageName {
     font-size: 20px;
   }
-  .left-group, .right-group{
-    margin-top: 0;
-  }
-  .full-container{
-    flex-direction: column;
-    align-items: center;
-    top: 20vh;
-    text-align: center;
-  }
   .CV{
     width: 50%;
-    
-  }
-  .intro {
-    display: grid;
-    place-self: center;
-  }
-
-  video{
-    width: fit-content;
   }
   .NavMenuButtons{
     margin: 10px 0; 
     font-size: 16px;
     padding: 10px 15px;
   }
-
-  .intro-container {
-    font-size: 16px;
-  }
-
-  .PreIntro-container {
-    font-size: 14px;
-  }
   #element i{
     font-size: 25px;
-  }
-
-  .Mypicture {
-    width: 70%;
-    height: 100%;    
-    padding: 30px;
   }
   .developper {
     font-size: 10px;
@@ -594,11 +566,6 @@ a .CV{
   background-color: #2196F3;
   border-radius: 25px;
 }
-
-.left-group{
-  padding: 0;
-  margin-top: 0;
-}
 .projectsTEXT{
   font-size: 5vh;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -639,8 +606,14 @@ a .CV{
 }
 .services_container{
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
   justify-items: center;
+}
+.services_container p {
+  font-size: 1.2vh;
+}
+.services_container img{
+  border-radius: 50%;
 }
 .Video-Container h4{
   text-align: center;
@@ -651,6 +624,22 @@ a .CV{
 }
 
 
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5vh;
+  color: rgba(255, 255, 255, 0.188);
+  align-self: center;
+  cursor: none;
+  
+}
+.centering{
+  text-align: center;
+}
+button:hover{
+   color: red;
+   transition: color .1s ease-in-out;
+}
 
 .Game_Making{
   width: 50%;

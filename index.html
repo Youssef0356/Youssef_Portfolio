@@ -51,31 +51,29 @@
     <section id="home" class="fadein" class="section2">
       <!-- undernavbar navigation-->
       <div class="full-container">
-        <div class="left-container">
-          <h3 class="PreIntro-container" id="home">Welcome to my world.</h3>
-          <h3 class="intro-container" >Hello I'm Youssef Neji</h3>
-          <span id="element"></span>
+        <div class="left-group">
 
+          <h3>Welcome to my world.</h3>
+          <h3 class="introduction">Hello I'm <i>Youssef Neji</i> and I'm</h3>
+
+          <h3 id="element"></h3>
+          
           <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
           <script>
             var typed = new Typed('#element', {
-              strings: [' <i class="developper"> A Web Developper </i> ', '<i class="developper"> A Game Developper </i> ', '<i class="developper"> A 3D Animator </i> '],
-              typeSpeed: 70, loop: true, backSpeed: 50
+              strings: ['<i">Dedicated To Learn</i>','<i">An Innovative</i> ','<i">A Passionate</i>'],
+              typeSpeed: 100, loop: true, backSpeed: 50
             });
           </script>
-          <div class="intro">
-            <h5 class="letterOfPresentation">
-              I'm eager to be the kind of assistant you need.<br>Let's work together to make your business
-              flourish.
-            </h5>
-            <div class="wiggling">
-              <a href="Pictures\Youssef CV.pdf" download="Youssef CV.pdf" class="CV"> >   Download My CV   <</a>
-            </div>
+          
+
+          <div class="wiggling">
+            <a href="Pictures\Youssef CV.pdf" download="Youssef CV.pdf" class="CV"> > Download My CV <</a>
           </div>
+    
         </div>
-        <div class="right-container">
-            <img src="Pictures/YoussefAvatarv1.png" class="Mypicture">
+        <div>
+          <img src="Pictures/YoussefAvatarv1.png" class="Mypicture">
         </div>
       </div>
     </section>
@@ -86,6 +84,10 @@
     <h1 class="services">
       What I Offer ?
     </h1>
+    <h5 class="OffreDescription">
+      I'm eager to be the kind of assistant you need.<br>
+      <i>Let's work together to make your business flourish.</i>
+    </h5>
     <div class="services_container">
  <!-- game making link -->
       <div class="Game_Making">
@@ -95,11 +97,11 @@
       </div>
       
       <!-- gamedev description link -->
-      <div>
-        <p>
-          If you're seeking to enhance your product through interactive and engaging
-          game design, I'm here to turn your vision into a virtual reality.
-        </p>
+      <div class="centering">
+          <button onclick="GameDevDesc()" id="GameDevButton">
+          show more
+        </button>
+        <span id="GameDevDescField"></span>
       </div>
       </div>
       <!-- animation link  -->
@@ -110,13 +112,11 @@
         <h3 class="ServicesText">3D Animation</h3>
       </div>
       <!-- animation description -->
-      <div>
-        <p>
-          Looking to elevate your brand through captivating animations? 
-          I can guarantee to you the high quality 3D animations for video content,
-          and transforming spaces into animated wonders. 
-          Let me weave the magic of animation into your project!
-        </p>
+      <div class="centering">
+        <button onclick="AnimationDesc()" id="AnimationButton">
+          show more
+        </button>
+        <span id="AnimationDescField"></span>
       </div>
 </div>
 
@@ -127,13 +127,11 @@
         <h3 class="ServicesText">Video Editing</h3>
       </div>
       <!-- video editing description-->
-      <div>
-        <p>
-          my service is to channel all my acquired knowledge to deliver top-notch video
-          work.Utilizing tons of tools, coupled with my creative touch in Unreal Engine 5
-          and 3D animations,I specialize in professional montage techniques to provide you
-          with the highest quality for your video content.
-          </p>
+      <div class="centering">
+        <button onclick="VideoEditDesc()" id="VideoEditButton">
+          show more
+        </button>
+        <span id="VideoEditDescField"></span>
       </div>
     </div>
       <!-- image editing link  -->
@@ -143,11 +141,11 @@
         <h3 class="ServicesText">Image Editing</h3>
       </div>
       <!-- image editing description-->
-      <div>
-        <p>
-          If you're in need of high-quality images for your work or product, I'm here to deliver. 
-          Let me bring my passion for image editing to enhance and elevate your visual content.</b>
-        </p>
+      <div class="centering">
+        <button onclick="ImageEditDesc()" id="ImageEditButton">
+          show more
+        </button>
+        <span id="ImageEditDescField"></span>
       </div>
     </div>
       <div class="Modeling">
@@ -156,13 +154,12 @@
         <h3 class="ServicesText">3D Modeling</h3>
       </div>
       <div>
-        <p>
-            How can I assist you? I offer my skills to model your space,whether it's
-            a company, university, or any setting.
-            I can create a program that allows users
-            to navigate through these modeled environments on their computers, providing a
-            unique and immersive experience for your audience.
-        </p>
+        <div class="centering">
+          <button onclick="ModelingDesc()" id="ModelingButton">
+            show more
+          </button>
+          <span id="ModelingDescField"></span>
+        </div>
       </div>
       <!-- more services here if needed -->
   </div>
@@ -276,13 +273,33 @@
                   </div>
 
                   <div>
-                    <a href="#"><img src="Pictures\GamingRoomPart5.png" alt=""></a>
+                    <a href="https://youtu.be/-drWWHq5_ZI"><img src="Pictures\GamingRoomPart5.png" alt=""></a>
                     <h4>Making an interior design in 3D blender </h4>
                   </div>
                   
                   <div>
                     <a href="https://youtu.be/YdlFCVIk-aE"><img src="Pictures\Devfest.jpg" alt=""></a>
                     <h4>My DevFest Animation For Explanation Of Large Langage Models </h4>
+                  </div>
+                  <div>
+                    <a href="https://youtube.com/shorts/lbWH1xlfekg?feature=share"><img src="Pictures\Tentacles.png"></a>
+                    <h4>A hospital where it got invated by creepy octopus | Made With Blender </h4>
+                  </div>
+                  <div>
+                    <a href="https://youtu.be/kWNr0yG960Q"><img src="Pictures\Dragonball vfx.png" alt=""></a>
+                    <h4>My First VFX Project Using Blender</h4>
+                  </div>
+                  <div>
+                    <a href="https://fb.watch/pztPL0pEvN/"><img src="Pictures\Gamfest.png" alt=""></a>
+                    <h4>My After Event Video Editing For Game Fest</h4>
+                  </div>
+                  <div>
+                    <a href="https://fb.watch/pztZQwUThh/"><img src="Pictures\MasterFasteranim.png"></a>
+                    <h4>My Animation For The Master Faster Event Announcment</h4>
+                  </div>
+                  <div>
+                    <a href="https://youtu.be/GhIolALXmvA"><img src="Pictures\IGSC .png"></a>
+                    <h4>My First Animation For Isims Google Students Club</h4>
                   </div>
 
                 </div>
