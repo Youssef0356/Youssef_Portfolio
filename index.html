@@ -21,11 +21,11 @@
   <div class="container">
     <section class="section1">
       <div class="navigationBar" id="navigationBar">
-        <div class="left-group">
+        <div>
           <h1 class="PageName">Portfolio</h1>
         </div>
-        
         <div class="right-group">
+        <div>
            <a href="#" class="NavMenuButtons"  >   <!--HOME BUTTON  -->
             <span></span>
             <span></span>
@@ -33,12 +33,16 @@
             <span></span>
             Home
           </a>
+        </div>
+        <div>
           <a href="#section2" class="NavMenuButtons" >
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Services</a>
+        </div>
+        <div>
           <a href="#" class="NavMenuButtons">
             <span></span>
             <span></span>
@@ -48,23 +52,23 @@
           </a>
         </div>
       </div>
+        </div>
+      </div>
     </section>
     <section id="home" class="fadein" class="section2">
       <!-- undernavbar navigation-->
       <div class="full-container">
         <div class="left-group">
 
-          <h3>Welcome to my world.</h3>
-          <h3 class="introduction">Hello I'm <i>Youssef Neji</i> and I'm</h3>
+          <h4 class="Presentation">Welcome to my world.</h4>
+          <h3 class="introduction">Hello I'm <b>Youssef Neji</b></h3>
 
-          <h3 id="element"></h3>
+          <span id="element"></span>
           
           <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
           <script>
-            var typed = new Typed('#element', {
-              strings: ['<i">Dedicated To Learn</i>','<i">An Innovative</i> ','<i">A Passionate</i>'],
-              typeSpeed: 100, loop: true, backSpeed: 50
-            });
+            let typed = new Typed('#element', {
+              strings: ['A web developer','A game developer','A 3d artist','A video editor'],typeSpeed: 70, loop: true, backSpeed: 50});
           </script>
           
 
@@ -73,15 +77,20 @@
           </div>
     
         </div>
-        <div>
+        <div class="Right-Group">
           <img src="Pictures/YoussefAvatarv1.png" class="Mypicture">
         </div>
       </div>
+      
     </section>
+
     <section class="section2" id="section2">
 <!-- services section -->
-<div class="MyServices" style="width: 100%;">
+<div class="MyServices">
   <div>
+    <br>
+    <br>
+    <br>
     <h1 class="services">
       What I Offer ?
     </h1>
@@ -89,23 +98,29 @@
       I'm eager to be the kind of assistant you need.<br>
       <i>Let's work together to make your business flourish.</i>
     </h5>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     </div>
     <div class="services_container">
       
  <!-- game making link -->
       <div class="Game_Making">
         <div class="Game_Making_Img_Container">
-        <img src="Pictures\GameDevelopment.jpg" title="Go To Section" onclick="gamemaking()">
+        <img src="Pictures\GameDevelopment.jpg" title="Go To Section">
         <h3 class="ServicesText"> Game Making</h3>
       </div>
       
       <!-- gamedev description link -->
-      <div class="centering">
+      <!-- <div class="centering">
           <button onclick="GameDevDesc()" id="GameDevButton">
           show more
         </button>
         <span id="GameDevDescField"></span>
-      </div>
+      </div> -->
       </div>
       <!-- animation link  -->
 
@@ -115,11 +130,11 @@
         <h3 class="ServicesText">3D Animation</h3>
       </div>
       <!-- animation description -->
-      <div class="centering">
+      <!-- <div class="centering">
         <button onclick="AnimationDesc()" id="AnimationButton">
           show more
         </button>
-      </div>
+      </div> -->
 </div>
 
       <!-- video editing link  -->
@@ -129,11 +144,11 @@
         <h3 class="ServicesText">Video Editing</h3>
       </div>
       <!-- video editing description-->
-      <div class="centering">
+      <!-- <div class="centering">
         <button onclick="VideoEditDesc()" id="VideoEditButton">
           show more
         </button>
-      </div>
+      </div> -->
     </div>
       <!-- image editing link  -->
       <div class="Image_Editing">
@@ -142,11 +157,11 @@
         <h3 class="ServicesText">Image Editing</h3>
       </div>
       <!-- image editing description-->
-      <div class="centering">
+      <!-- <div class="centering">
         <button onclick="ImageEditDesc()" id="ImageEditButton">
           show more
         </button>
-      </div>
+      </div> -->
     </div>
       <div class="Modeling">
         <div>
@@ -154,21 +169,16 @@
         <h3 class="ServicesText">3D Modeling</h3>
       </div>
       <div>
-        <div class="centering">
+        <!-- <div class="centering">
           <button onclick="ModelingDesc()" id="ModelingButton">
             show more
           </button>
-        </div>
+        </div> -->
       </div>
       <!-- more services here if needed -->
   </div>
   </div>
-  <div class="descriptionServices">
-    <h1>Description:</h1>
-    <span id="DescField">
-      
-    </span>
-</div>
+
 <br>
 <br>
 <br>

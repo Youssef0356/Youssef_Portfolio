@@ -1,4 +1,6 @@
-
+html {
+  scroll-snap-type: y mandatory;
+}
 section {
   display: grid;
   grid-template-columns: auto;
@@ -20,6 +22,9 @@ body {
   background: linear-gradient(315deg, rgb(4, 27, 42) 3%, rgba(6,68,105,1) 38%, rgb(24, 52, 65) 68%, rgb(0, 0, 0) 98%);
   background-size: 400% 400%;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   
 }
 #custom-cursor {
@@ -68,10 +73,8 @@ body {
 
 #element {
   transition: .5s;
-  font-size: 2vh; 
-  color: rgb(166, 166, 166);
-
-
+  font-size: 5vh;
+  text-decoration: underline rgb(0, 109, 136);
 }
 .OffreDescription{
   color: rgba(166, 166, 166, 0.573);
@@ -93,12 +96,7 @@ body {
   width: 100%;
   animation: fade 2s ease-in-out;
 }
-.left-group{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
 .Mypicture {
   width: 100%;
   aspect-ratio: 1;
@@ -107,12 +105,18 @@ body {
 }
 .left-group h3{
   font-size: 5vh;
-  text-align: center;
+}
+
+.left-group  h4{
+  font-size: 2vh;
+  color: rgb(171, 171, 171);
+  padding-top: 10%;
+  margin: 0;
 }
 .left-group .introduction{
-  font-size: 2vh;
-  color: rgb(166, 166, 166);
+  color: white;
   font-weight: lighter;
+  padding-top:20% ;
 }
 #navigationBar{
   cursor: none;
@@ -120,7 +124,11 @@ body {
 .intro {
   margin-top: 50px;
 }
-
+.right-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .letterOfPresentation {
   font-size: 16px;
@@ -138,25 +146,6 @@ body {
   100%{
     color: rgb(121, 111, 255);
   }
-}
-
-/* bottom navigation bar  */
-.Left-group{
-  z-index: 1000;
-  bottom: 0;
-  position: fixed;
-  width: fit-content;
-  height: 3%;
-  transition: height 1s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color:rgba(0, 69, 197, 0.5);
-  border-radius: 25px 25px 0px 0px;  
-}
-.Left-group:hover{
-  height: 7%;
-  transition: height .5s ease-in-out ;
 }
 .LinkVideos{
 padding: 10px;
@@ -209,15 +198,12 @@ text-decoration: overline;
   }
 }
 
-.Left-group a{
-  color: white;
-}
 .navigationBar {
   z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 90px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  height: 10%;
   width: 100%;
   position: fixed;
   background: linear-gradient(90deg, rgb(4, 27, 42) 0%, rgba(0,0,53,1) 100%);
@@ -229,9 +215,8 @@ text-decoration: overline;
 }
 
 .PageName {
-  font-size: 40px;
-  color: white;
-  padding: 0 0 0 20%  ;
+  font-size: 3vh;
+  padding: 0;
 }
 
 .NavMenuButtons {
@@ -240,13 +225,12 @@ text-decoration: overline;
   color: rgb(255, 255, 255);
   transition: .5s;
   font-size: 20px;
-  display: inline-block;
   padding: 15px;
   cursor: none;
 }
 /* cv download button */
 .wiggling{
-  padding: 50px;
+  padding-top: 5%;
   animation: wiggle 2s linear infinite;
 }
 .CV{
@@ -422,18 +406,17 @@ a{
   #custom-cursor{
     display: none;
   }
-  .navigationBar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 14vh;
-    width: 100%;
-  }
   .full-container{
     margin-top: 10vh;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-
+  }
+   .left-group h3{
+    text-align: center;
+    margin:0;
+    font-size: 3vh !important;
+  }
+  .left-group span{
+    display: none;
   }
   #custom-cursor{
     display: hidden;
@@ -442,9 +425,6 @@ a{
     width: 50% ;
     display: grid;
     grid-template-columns: auto;
-  }
-  .PageName {
-    font-size: 20px;
   }
   .CV{
     width: 50%;
@@ -460,15 +440,7 @@ a{
   .developper {
     font-size: 10px;
   }
-  .letterOfPresentation{
-    text-align: center;
-    font-size: 1.25vh;
-    padding: 10px;
-  }
-  .services_container {
-    grid-gap: 1rem;
-    display: block;
-  }
+
   .services{
   font-size: 5vh;
   }
@@ -486,16 +458,17 @@ a{
 .ShowMoreButton{
   visibility:visible;
 }
+.navigationBar {
+  height: 15%;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.left-group h4{
+text-align: center;
+}
 }
 
 /* what i offer ? */
-.MyServices{
-  height: 100%;
-  width: 100%;
-}
-.MyServices a{
-  color: white;
-}
+
 
 .ServicesText{
   text-align: center;
@@ -503,8 +476,11 @@ a{
   padding-bottom: 5%;
   padding-top:3%;
 }
+.section2{
+  height: 100%;
+}
 .MyServices pre{
-  padding: 20px;
+  padding: 20%;
 }
 .fadein {
   animation: show 1s ease-in-out;
@@ -516,7 +492,7 @@ a{
   100%{
     opacity: 1;
   }
-  
+
 }
 
 
@@ -608,7 +584,7 @@ a{
     display: none;
 }
 .section2{
-  background:linear-gradient(black , rgb(6, 0, 20));
+  background:linear-gradient(rgb(4, 27, 42),#000000);
   width: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -616,7 +592,7 @@ a{
   background-size: cover;
 }
 .section3{
-  background:linear-gradient(#9bafd9 , #103783);
+  background:linear-gradient(#103783,#000000);
   width: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -634,24 +610,14 @@ image-resolution: 1000dpi;
 .descriptionServices{
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.215);
   flex-direction: column;
-  font-size: 2vh;
   width: 100%;
-  padding-top:5%;
-
-}
-.descriptionServices h1{
-  font-size: 2vh;
-  margin-top:-3vh;
-
-  
-}
-.descriptionServices span{
-  width: 50%;
+  height: 25%;
   position: absolute;
-  aspect-ratio: 7/1;
-  border:  1px dotted white;
 }
+
 .Images-Container img:hover{
   filter:brightness(2);
 }
@@ -697,17 +663,17 @@ image-resolution: 1000dpi;
 }
 
 .MyServices img{
-  max-width:100%;
-  max-height:100%;
+  width: 100%;
+  object-fit: cover;
   border-style:solid;
 }
 .services_container{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  justify-content: center;
+  place-items: center;
 }
-.services_container p {
-  font-size: 2vh;
-}
+
 .services_container img{
   border-radius: 50%;
 }
@@ -717,23 +683,6 @@ image-resolution: 1000dpi;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(121, 111, 255);
   animation: colorchange 20s ease-in-out infinite;
-}
-
-.MyServices Button {
-  background-color: transparent;
-  border: none;
-  font-size: 1.5vh;
-  color: rgb(135, 135, 255);
-  align-self: center;
-  cursor: none;
-  
-}
-.centering{
-  text-align: center;
-}
-.MyServices button:hover{
-   color: red;
-   transition: color .1s ease-in-out;
 }
 
 .Game_Making{
