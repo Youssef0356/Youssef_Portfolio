@@ -594,7 +594,7 @@ a{
 }
 .Images-Container{
     display: grid;
-    gap: 5%; 
+    gap: 1%; 
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     justify-content: center;
     place-self: center;
@@ -603,11 +603,12 @@ a{
     display: none;
 }
 .Images-Container img{
-border: solid 2px white;
 cursor: none;
 width: 100%;
-aspect-ratio: 1;
+aspect-ratio:1px;
 object-fit:cover;
+border:solid 2px black;
+
 }
 .Images-Container a {
   list-style: none;
