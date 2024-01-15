@@ -229,7 +229,7 @@ text-decoration: overline;
 .PageName {
   font-size: 40px;
   color: white;
-  padding: 0 0 0 10%  ;
+  padding: 0 0 0 20%  ;
 }
 
 .NavMenuButtons {
@@ -590,6 +590,58 @@ a{
   justify-content: center;
   place-self: center;
   padding: 5%;
+  
+}
+.Images-Container{
+    display: grid;
+    gap: 5%; 
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    justify-content: center;
+    place-self: center;
+    padding: 5%;
+    text-align: center;
+    display: none;
+}
+.Images-Container img{
+border: solid 2px white;
+cursor: none;
+width: 100%;
+aspect-ratio: 1;
+object-fit:cover;
+}
+.Images-Container a {
+  list-style: none;
+  color: rgb(73, 73, 255);
+}
+.projectsNavigationContainer{
+  display: grid;
+  width: 100%;
+  color: white;
+  gap: 10%;
+  bottom: 0;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  grid-template-columns: auto auto auto auto;
+}
+.projectsNavigationContainer button{
+  color: white;
+  list-style: none;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2vh;
+
+}
+.projectsNavigationContainer button:hover{
+  text-decoration: underline;
+  color:rgba(255, 0, 0, 0.617);
+}
+
+.projectsNavigationContainer button:hover{
+  transition: all .7s ;
+  border-radius: 10%;
 }
 .cols a:hover{
   border:solid 2px red ;
@@ -625,8 +677,7 @@ a{
   animation: colorchange 20s ease-in-out infinite;
 }
 
-
-button {
+.MyServices Button {
   background-color: transparent;
   border: none;
   font-size: 1.5vh;
@@ -638,7 +689,7 @@ button {
 .centering{
   text-align: center;
 }
-button:hover{
+.MyServices button:hover{
    color: red;
    transition: color .1s ease-in-out;
 }
@@ -658,3 +709,4 @@ button:hover{
 .Modeling{
   width: 50%;
 }
+

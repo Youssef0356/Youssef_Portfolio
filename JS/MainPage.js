@@ -79,3 +79,16 @@ function ModelingDesc() {
   document.getElementById("ModelingButton").innerHTML="show more";
   state="less";
 }}
+function VideosShow(){
+var videos=document.getElementById("Video-Container")
+var images=document.getElementById("Images-Container")
+var web=document.getElementById("Video-Container")
+var games=document.getElementById("Video-Container")
+
+videos.style.display="grid";
+images.style.display="none";
+}
+function ImagesShow(){
+  document.getElementById("Video-Container").style.display="none"
+  document.getElementById("Images-Container").style.display="grid"
+}
