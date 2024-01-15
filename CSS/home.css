@@ -602,6 +602,7 @@ a{
     text-align: center;
     display: none;
 }
+
 .Images-Container img{
 cursor: none;
 width: 100%;
@@ -609,6 +610,9 @@ aspect-ratio:1px;
 object-fit:cover;
 border:solid 2px black;
 
+}
+.Images-Container img:hover{
+  filter:brightness(2);
 }
 .Images-Container a {
   list-style: none;
