@@ -83,7 +83,9 @@ body {
 }
 .full-container {
   display: grid;
-  padding: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
   grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
 }
 
@@ -417,6 +419,9 @@ a{
   body{
     cursor: none;
   }
+  #custom-cursor{
+    display: none;
+  }
   .navigationBar {
     display: flex;
     flex-direction: column;
@@ -602,14 +607,50 @@ a{
     text-align: center;
     display: none;
 }
-
+.section2{
+  background:linear-gradient(black , rgb(6, 0, 20));
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section3{
+  background:linear-gradient(#9bafd9 , #103783);
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .Images-Container img{
 cursor: none;
 width: 100%;
 aspect-ratio:1px;
 object-fit:cover;
 border:solid 2px black;
+image-resolution: 1000dpi;
+}
+.descriptionServices{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2vh;
+  width: 100%;
+  padding-top:5%;
 
+}
+.descriptionServices h1{
+  font-size: 2vh;
+  margin-top:-3vh;
+
+  
+}
+.descriptionServices span{
+  width: 50%;
+  position: absolute;
+  aspect-ratio: 7/1;
+  border:  1px dotted white;
 }
 .Images-Container img:hover{
   filter:brightness(2);
@@ -654,10 +695,7 @@ border:solid 2px black;
 .hideText{
   font-size: 12px;
 }
-.MyServices p{
-  color: rgb(148, 148, 148);
-  text-align: center;
-}
+
 .MyServices img{
   max-width:100%;
   max-height:100%;
@@ -666,10 +704,9 @@ border:solid 2px black;
 .services_container{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-  justify-items: center;
 }
 .services_container p {
-  font-size: 1.2vh;
+  font-size: 2vh;
 }
 .services_container img{
   border-radius: 50%;
@@ -686,7 +723,7 @@ border:solid 2px black;
   background-color: transparent;
   border: none;
   font-size: 1.5vh;
-  color: rgba(255, 255, 255, 0.188);
+  color: rgb(135, 135, 255);
   align-self: center;
   cursor: none;
   
