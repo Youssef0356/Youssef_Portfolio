@@ -440,6 +440,7 @@ a{
 @media (max-width: 600px) {
   body{
     cursor: none;
+    background-image: url('/Pictures/cloud-computing.png');
     
   }
 
