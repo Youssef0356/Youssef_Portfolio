@@ -401,6 +401,46 @@ a{
     width: 100%;
     height: 50%;
   }
+  .MyServices img{
+    width: 300px !important;
+    height: 300px !important;
+  }
+  
+  .services_container .centering{
+    width: 50%;
+    align-items: center;
+    
+  }
+  .Video_editing{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .Image_Editing{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .Modeling{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .Animation{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .Game_Making{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
 }
 
 
@@ -480,25 +520,46 @@ a{
 .left-group h4{
 text-align: center;
 }
+
+.MyServices img{
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.services_container .centering{
+  width: 50%;
+  align-items: center;
+  
+}
+.Video_editing{
+  display: flex !important;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
 .Image_Editing{
-  display: grid;
-  grid-template-columns: auto;
-  gap: 20%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 .Modeling{
-  display: grid;
-  grid-template-columns:auto ;
-  gap: 20%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 .Animation{
-  display: grid;
-  grid-template-columns: auto;
-  gap: 20%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 .Game_Making{
-  display: grid;
-  grid-template-columns: auto;
-  gap: 20%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 }
 
@@ -705,43 +766,74 @@ image-resolution: 1000dpi;
 }
 .services_container{
   display: grid;
-  grid-template-columns: auto;
-  place-items: center;
+  grid-template-columns:auto;
+  justify-content: center;
+
 }
 .Video_editing{
   display: grid;
   grid-template-columns: auto auto;
-  gap: 20%;
-}
-.services_container .centering{
-  background:linear-gradient(white,rgb(20, 20, 20),black);
-  width: 100%;
+  padding-left: 25%;
+  padding-top:5%;
+  padding-bottom: 5%;
+  width: 50%;
+  gap: 5%;
   
 
 }
 .Image_Editing{
   display: grid;
   grid-template-columns: auto auto;
-  gap: 20%;
+  padding-left: 25%;
+  padding-top:5%;
+  padding-bottom: 5%;
+  width: 50%;
+  gap: 5%;
+
 }
 .Modeling{
   display: grid;
-  grid-template-columns:auto auto ;
-  gap: 20%;
+  grid-template-columns: auto auto;
+  padding-left: 25%;
+  padding-top:5%;
+  padding-bottom: 5%;
+  width: 50%;
+  gap: 5%;
+
 }
 .Animation{
   display: grid;
   grid-template-columns: auto auto;
-  gap: 20%;
+  padding-left: 25%;
+  padding-top:5%;
+  padding-bottom: 5%;
+  width: 50%;
+  gap: 5%;
+
 }
 .Game_Making{
   display: grid;
   grid-template-columns: auto auto;
-  gap: 20%;
+  padding-left: 25%;
+  padding-top:5%;
+  padding-bottom: 5%;
+  width: 50%;
+  gap: 5%;
 }
-.services_container img{
-  border-radius: 50%;
+
+.services_container .centering{
+  background:linear-gradient(rgba(51, 129, 162, 0.256),rgba(135, 135, 135, 0.231));
+  color: #ffffff;
+  border-radius: 5px;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 4vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .Video-Container h4{
   text-align: center;
   text-decoration:underline;
@@ -750,19 +842,5 @@ image-resolution: 1000dpi;
   animation: colorchange 20s ease-in-out infinite;
 }
 
-.Game_Making{
-  width: 50%;
-}
-.Animation{
-  width: 50%;
-}
-.Video_editing{
-  width: 50%;
-}
-.Image_Editing{
-  width: 50%;
-}
-.Modeling{
-  width: 50%;
-}
+
 
