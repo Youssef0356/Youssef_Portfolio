@@ -5,6 +5,7 @@ section {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
+  width: 100%;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   animation : gradient 15s ease infinite ;
-  background: linear-gradient(315deg, rgb(4, 27, 42) 3%, rgba(6,68,105,1) 38%, rgb(24, 52, 65) 68%, rgb(0, 0, 0) 98%);
+  background-image:url(/Pictures/networkBackground.jpg);
   background-size: 400% 400%;
   background-attachment: fixed;
   background-position: center;
@@ -453,7 +454,7 @@ a{
   }
   .full-container{
     margin-top: 10vh;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
   }
    .left-group h3{
     text-align: center;
@@ -572,9 +573,7 @@ text-align: center;
   padding-bottom: 5%;
   padding-top:3%;
 }
-.section2{
-  height: 100%;
-}
+
 .MyServices pre{
   padding: 20%;
 }
@@ -600,12 +599,15 @@ text-align: center;
   font-size: 50px;
   text-align: center;
 }
+.skills{
+  padding-left:25%;
+  width: 50%;
+}
 .skills_container {
   width: 100%;
   height: 3vh;
   background-color: #ddd;
   border-radius: 25px;
-  text-align: right;
   color: white;
 }
 .skillsSECTION{
@@ -646,7 +648,7 @@ text-align: center;
   border-radius: 25px;
 }
 .projectsTEXT{
-  font-size: 5vh;
+  font-size: 4vh;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: lighter !important;
   font-size: 50px;
@@ -663,7 +665,7 @@ text-align: center;
 .Video-Container  {
   display: grid;
   gap: 5%; 
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
   justify-content: center;
   place-self: center;
   padding: 5%;
@@ -687,31 +689,13 @@ text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.section3{
-  background:linear-gradient(#103783,#000000);
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .Images-Container img{
 cursor: none;
 width: 100%;
 aspect-ratio:1px;
 object-fit:cover;
 border:solid 2px black;
-image-resolution: 1000dpi;
-}
-.descriptionServices{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.215);
-  flex-direction: column;
-  width: 100%;
-  height: 25%;
-  position: absolute;
 }
 
 .Images-Container img:hover{
@@ -725,7 +709,7 @@ image-resolution: 1000dpi;
   display: grid;
   width: 100%;
   color: white;
-  gap: 10%;
+  gap: 5%;
   bottom: 0;
   text-align: center;
   justify-content: center;
@@ -799,8 +783,8 @@ image-resolution: 1000dpi;
   padding-bottom: 5%;
   width: 50%;
   gap: 5%;
-
 }
+
 .Animation{
   display: grid;
   grid-template-columns: auto auto;
@@ -809,7 +793,31 @@ image-resolution: 1000dpi;
   padding-bottom: 5%;
   width: 50%;
   gap: 5%;
-
+}
+.Animation .centering:hover{
+  border: rgb(120, 120, 255) solid 1px;
+  color:#ffffff;
+  background-color:rgb(4, 27, 42);
+}
+.Game_Making .centering:hover{
+  border: rgb(120, 120, 255) solid 1px;
+  color:#ffffff;
+  background-color:rgb(4, 27, 42);
+}
+.Modeling .centering:hover{
+  border: rgb(120, 120, 255) solid 1px;
+  color:#ffffff;
+  background-color:rgb(4, 27, 42);
+}
+.Image_Editing .centering:hover{
+  border: rgb(120, 120, 255) solid 1px;
+  color:#ffffff;
+  background-color:rgb(4, 27, 42);
+}
+.Video_editing .centering:hover{
+  border: rgb(120, 120, 255) solid 1px;
+  color:#ffffff;
+  background-color:rgb(4, 27, 42);
 }
 .Game_Making{
   display: grid;
@@ -822,8 +830,8 @@ image-resolution: 1000dpi;
 }
 
 .services_container .centering{
-  background:linear-gradient(rgba(51, 129, 162, 0.256),rgba(135, 135, 135, 0.231));
-  color: #ffffff;
+  border: rgb(116, 116, 255) solid 1px;
+  background-color:rgba(6,68,105,1);
   border-radius: 5px;
   width: auto;
   justify-content: center;
@@ -833,7 +841,6 @@ image-resolution: 1000dpi;
   font-size: 4vh;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .Video-Container h4{
   text-align: center;
   text-decoration:underline;
@@ -841,6 +848,3 @@ image-resolution: 1000dpi;
   color: rgb(121, 111, 255);
   animation: colorchange 20s ease-in-out infinite;
 }
-
-
-
