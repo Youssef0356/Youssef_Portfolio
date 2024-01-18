@@ -105,6 +105,7 @@ body {
 }
 .left-group h3{
   font-size: 5vh;
+  font-weight: lighter;
 }
 
 .left-group  h4{
@@ -113,20 +114,19 @@ body {
   padding-top: 10%;
   margin: 0;
 }
-.left-group .introduction{
-  color: white;
+.left-group{
   font-weight: lighter;
-  padding-top:20% ;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 #navigationBar{
   cursor: none;
 }
-.intro {
-  margin-top: 50px;
-}
 .right-group{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20%;
   align-items: center;
 }
 
@@ -202,7 +202,7 @@ text-decoration: overline;
   z-index: 1000;
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: auto auto;
   height: 10%;
   width: 100%;
   position: fixed;
@@ -232,6 +232,7 @@ text-decoration: overline;
 .wiggling{
   padding-top: 5%;
   animation: wiggle 2s linear infinite;
+
 }
 .CV{
   text-align: center;
@@ -330,21 +331,26 @@ a{
   .navigationBar {
     align-items: center;
     height: 10%;
+    grid-template-columns:auto auto;
+
   }
   .full-container {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    height: 50%;
   }
   .CV{
     width: 100%;
   }
   .PageName{
-    font-size: 30px;
+    font-size: 3vh;
   }
   .NavMenuButtons{
-    margin: 10px 0; 
     font-size: 16px;
-    padding: 10px 15px;
+  }
+  .right-group{
+    gap: 5%;
+    
   }
   #element i{
     font-size: 30px;
@@ -360,6 +366,7 @@ a{
   .Mypicture {
     width: 100%;
     aspect-ratio:1/1 ;
+
   }
  
   .developper {
@@ -368,9 +375,7 @@ a{
   .services_container {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-
     grid-gap: 1rem;
-    display: block;
   }
   .Modeling{
     padding: 5%;
@@ -421,6 +426,12 @@ a{
   #custom-cursor{
     display: hidden;
   }
+  .right-group{
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+    justify-content: center;
+    font-size: 1.7vh;
+  }
   .skillsSECTION{
     width: 50% ;
     display: grid;
@@ -429,11 +440,7 @@ a{
   .CV{
     width: 50%;
   }
-  .NavMenuButtons{
-    margin: 10px 0; 
-    font-size: 16px;
-    padding: 10px 15px;
-  }
+
   #element i{
     font-size: 25px;
   }
@@ -455,6 +462,10 @@ a{
 .MyServices p{
   font-size: 10px;
 }
+.PageName{
+  padding: 0;
+  margin: 0;
+}
 .ShowMoreButton{
   visibility:visible;
 }
@@ -462,8 +473,32 @@ a{
   height: 15%;
   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
 }
+.NavMenuButtons{
+  font-size: 16px;
+  gap: 5px;
+}
 .left-group h4{
 text-align: center;
+}
+.Image_Editing{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20%;
+}
+.Modeling{
+  display: grid;
+  grid-template-columns:auto ;
+  gap: 20%;
+}
+.Animation{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20%;
+}
+.Game_Making{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20%;
 }
 }
 
@@ -663,17 +698,47 @@ image-resolution: 1000dpi;
 }
 
 .MyServices img{
-  width: 100%;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-style:solid;
 }
 .services_container{
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-  justify-content: center;
+  grid-template-columns: auto;
   place-items: center;
 }
+.Video_editing{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20%;
+}
+.services_container .centering{
+  background:linear-gradient(white,rgb(20, 20, 20),black);
+  width: 100%;
+  
 
+}
+.Image_Editing{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20%;
+}
+.Modeling{
+  display: grid;
+  grid-template-columns:auto auto ;
+  gap: 20%;
+}
+.Animation{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20%;
+}
+.Game_Making{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20%;
+}
 .services_container img{
   border-radius: 50%;
 }

@@ -26,12 +26,12 @@
         </div>
         <div class="right-group">
         <div>
-           <a href="#" class="NavMenuButtons"  >   <!--HOME BUTTON  -->
+           <a href="#projects" class="NavMenuButtons"  >   <!--HOME BUTTON  -->
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Home
+            Projects
           </a>
         </div>
         <div>
@@ -59,16 +59,18 @@
       <!-- undernavbar navigation-->
       <div class="full-container">
         <div class="left-group">
-
           <h4 class="Presentation">Welcome to my world.</h4>
           <h3 class="introduction">Hello I'm <b>Youssef Neji</b></h3>
 
-          <span id="element"></span>
+          <h5 id="element"></h5>
           
           <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
           <script>
             let typed = new Typed('#element', {
-              strings: ['A web developer','A game developer','A 3d artist','A video editor'],typeSpeed: 70, loop: true, backSpeed: 50});
+              strings: ['A web developer','A game developer','A 3d artist','A video editor'],
+              showCursor:false,
+              typeSpeed: 70, loop: true, backSpeed: 50});
+              
           </script>
           
 
@@ -106,88 +108,78 @@
     <br>
     </div>
     <div class="services_container">
-      
- <!-- game making link -->
+    
+      <!-- game making link -->
       <div class="Game_Making">
-        <div class="Game_Making_Img_Container">
-        <img src="Pictures\GameDevelopment.jpg" title="Go To Section">
-        <h3 class="ServicesText"> Game Making</h3>
-      </div>
-      
-      <!-- gamedev description link -->
-      <!-- <div class="centering">
-          <button onclick="GameDevDesc()" id="GameDevButton">
-          show more
-        </button>
-        <span id="GameDevDescField"></span>
-      </div> -->
+        <div>
+          <img src="Pictures\GameDevelopment.jpg" title="Go To Section">
+          <h3 class="ServicesText"> Game Making</h3>
+        </div>
+    
+        <!-- gamedev description link -->
+        <div class="centering">
+          <p>I can make you a whole game about your product/event which makes people can enjoy the thing and see it's
+            functionality</p>
+        </div>
       </div>
       <!-- animation link  -->
-
+    
       <div class="Animation">
         <div>
-        <img src="Pictures\3danimation.jpg" title="Go To Section">
-        <h3 class="ServicesText">3D Animation</h3>
+          <img src="Pictures\3danimation.jpg" title="Go To Section">
+          <h3 class="ServicesText">3D Animation</h3>
+        </div>
+        <!-- animation description -->
+        <div class="centering">
+          <p>Animating your product is my field .Do you have an event and worry about it's marketing ?<b> Don't worry i
+              offer you the best 3d animation for your event.</b></p>
+        </div>
       </div>
-      <!-- animation description -->
-      <!-- <div class="centering">
-        <button onclick="AnimationDesc()" id="AnimationButton">
-          show more
-        </button>
-      </div> -->
-</div>
-
+    
       <!-- video editing link  -->
       <div class="Video_editing">
         <div>
-        <img src="Pictures\videoediting.jpg" title="Go To Section">
-        <h3 class="ServicesText">Video Editing</h3>
+          <img src="Pictures\videoediting.jpg" title="Go To Section">
+          <h3 class="ServicesText">Video Editing</h3>
+        </div>
+        <!-- video editing description-->
+        <div class="centering">
+          <p>
+            Do you have a problem for finding a video editor?<br><br><br><br>Don't worry I can provide you high quality
+              video editing for your videos with cheap pricesDo you have a problem for finding a video
+              editor?<br><br><br><br> Don't worry I can provide you high quality video editing for your videos with cheap
+                prices
+          </p>
+        </div>
       </div>
-      <!-- video editing description-->
-      <!-- <div class="centering">
-        <button onclick="VideoEditDesc()" id="VideoEditButton">
-          show more
-        </button>
-      </div> -->
-    </div>
       <!-- image editing link  -->
       <div class="Image_Editing">
         <div>
-        <img src="Pictures\photoediting.jpg" title="Go To Section">
-        <h3 class="ServicesText">Image Editing</h3>
+          <img src="Pictures\photoediting.jpg" title="Go To Section">
+          <h3 class="ServicesText">Image Editing</h3>
+        </div>
+        <!-- image editing description-->
+        <div class="centering">
+          <p>If you're in need of good quality images for your work or product, I'm here to deliver.</p>
+        </div>
       </div>
-      <!-- image editing description-->
-      <!-- <div class="centering">
-        <button onclick="ImageEditDesc()" id="ImageEditButton">
-          show more
-        </button>
-      </div> -->
-    </div>
+    
       <div class="Modeling">
         <div>
-        <img src="Pictures\3dModeling.jpg" title="Go To Section">
-        <h3 class="ServicesText">3D Modeling</h3>
-      </div>
-      <div>
-        <!-- <div class="centering">
-          <button onclick="ModelingDesc()" id="ModelingButton">
-            show more
-          </button>
-        </div> -->
+          <img src="Pictures\3dModeling.jpg" title="Go To Section">
+          <h3 class="ServicesText">3D Modeling</h3>
+        </div>
+        <div class="centering">
+          <p>I can prepare a prototype model to your space,whether it's a company, university... .I can create a program
+            that allows users to navigate through these modeled environments on their computers.Wanna try this new
+              marketing method?</p>
+        </div>
+        </div>
       </div>
       <!-- more services here if needed -->
-  </div>
+    </div>
   </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <!-- skills percentage area -->
 </section>
 <section class="section3">
@@ -255,7 +247,7 @@
 
 
           <!-- portfolio section -->
-            <section class="section4">
+            <section class="section4" id="projects">
               <h1 class="projectsTEXT">
                 My Projects
               </h1>
