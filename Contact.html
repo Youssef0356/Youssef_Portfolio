@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="CSS/home.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Pictures\Yletter.jpg">
+    <script type="text/javascript" src="JS\MainPage.js"></script>
+    <script src="https://kit.fontawesome.com/6234cd1732.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            padding-top: 2%;
+            display: grid;
+            align-items: center;
+            text-align: center;
+        }
+        .contact-info div {
+            margin: 20px;
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        }
+        a{
+            list-style: none;
+            color: white;
+
+        }
+
+        .contact-info div:hover {
+            transform: scale(1.05);
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    <section class="section1">
+        <div class="navigationBar" id="navigationBar">
+            <div>
+              <h1 class="PageName">Contact Information</h1>
+            </div>
+            <div class="right-group">
+              <div>
+                <a href="index.html#projects" class="NavMenuButtons"> <!--HOME BUTTON  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Projects
+                </a>
+              </div>
+              <div>
+                <a href="index.html#services" class="NavMenuButtons">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Services</a>
+              </div>
+              <div>
+                <a href="#" class="NavMenuButtons">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="contact-section">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>Telephone: 94730853</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p>Email: nejiyoussef081@gmail.com</p>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/youssef-neji-a13604279/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/youssef_neji0356/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/youssef.dragonboll/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook
+                </a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/channel/UCqkBe65a7TmAYR913H5gp7w" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                    YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        Copyright &copy; 2024 Youssef Neji
+    </div>
+</body>
+</html>

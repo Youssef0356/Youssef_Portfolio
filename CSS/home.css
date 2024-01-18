@@ -1,11 +1,11 @@
-html {
-  scroll-snap-type: y mandatory;
-}
+
 section {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
   width: 100%;
+  height: 100%;
+  cursor: none;
 }
 
 body {
@@ -36,17 +36,9 @@ body {
   border-radius: 50%;
   pointer-events: none;
   transform-origin: center;
+  z-index: 10000000;
 }
 
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1; 
-}
 *::-webkit-scrollbar {
   display: none;
   overflow-y: scroll;
@@ -278,7 +270,7 @@ a{
   list-style: none;
   text-decoration: none;
 }
-.CV a {
+.CV a,button{
   cursor: none;
   color: white;
   font-weight: bold;
@@ -338,7 +330,7 @@ a{
   .full-container {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
-    height: 50%;
+    height: 100%;
   }
   .CV{
     width: 100%;
@@ -448,7 +440,9 @@ a{
 @media (max-width: 600px) {
   body{
     cursor: none;
+    
   }
+
   #custom-cursor{
     display: none;
   }
@@ -562,6 +556,17 @@ text-align: center;
   justify-content: start;
   align-items: center;
 }
+.projectsNavigationContainer button{
+  color: rgb(255, 255, 255);
+  list-style: none;
+  border: none;
+  background-color: transparent;  
+  border-radius: 5px;
+  padding: 5px !important;
+  text-decoration: underline;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px !important;
+}
 }
 
 /* what i offer ? */
@@ -665,7 +670,7 @@ text-align: center;
 .Video-Container  {
   display: grid;
   gap: 5%; 
-  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
   justify-content: center;
   place-self: center;
   padding: 5%;
@@ -709,22 +714,24 @@ border:solid 2px black;
   display: grid;
   width: 100%;
   color: white;
+  padding-top: 10%;
+  padding-bottom: 10%;
   gap: 5%;
-  bottom: 0;
   text-align: center;
   justify-content: center;
   font-weight: bold;
   grid-template-columns: auto auto auto auto;
 }
 .projectsNavigationContainer button{
-  color: white;
+  color: rgb(255, 255, 255);
   list-style: none;
   border: none;
-  background-color: transparent;
-  font-weight: bold;
+  background-color: transparent;  
+  border-radius: 5px;
+  padding: 15px;
+  text-decoration: underline;
   font-family: 'Rubik', sans-serif;
-  font-size: 2vh;
-
+  font-size: 20px;
 }
 .projectsNavigationContainer button:hover{
   text-decoration: underline;
@@ -847,4 +854,13 @@ border:solid 2px black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(121, 111, 255);
   animation: colorchange 20s ease-in-out infinite;
+}
+#GameSection{
+  display: none;
+  place-items: center;
+  padding:5%;
+  gap: 5%; 
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  justify-content: center;
+  
 }

@@ -87,8 +87,18 @@ var games=document.getElementById("Video-Container")
 
 videos.style.display="grid";
 images.style.display="none";
+document.getElementById("GameSection").style.display="none"
+
 }
 function ImagesShow(){
   document.getElementById("Video-Container").style.display="none"
   document.getElementById("Images-Container").style.display="grid"
+  document.getElementById("GameSection").style.display="none"
+
+}
+function GameSection(){
+  document.getElementById("Video-Container").style.display="none"
+  document.getElementById("Images-Container").style.display="none"
+  document.getElementById("GameSection").style.display="grid"
+
 }
