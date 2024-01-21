@@ -20,7 +20,7 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   animation : gradient 15s ease infinite ;
-  background-image:url(/Pictures/networkBackground.jpg);
+  background-image:url('/Pictures/networkBackground.jpg');
   background-size: 400% 400%;
   background-attachment: fixed;
   background-position: center;
